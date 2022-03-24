@@ -1,0 +1,29 @@
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+.summary {
+  padding-left: 10px;
+  height: 100vh;
+}
+.summary h2 {
+  text-align: center;
+}
+.table {
+  width: 90vw;
+  margin-left: 10px;
+}
+.btn {
+  text-align: center;
+}
+.btnback {
+  background-color: rgb(93, 93, 250);
+  color: white;
+  padding: 10px 50px;
+  border-radius: 5px;
+}
+.ans {
+  text-align: center;
+}
