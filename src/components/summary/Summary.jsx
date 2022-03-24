@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import "./summary.css";
 import UserContext from "../../Store";
+import { Link } from "react-router-dom";
 
 const Summary = () => {
   const userContext = useContext(UserContext);
@@ -50,9 +51,10 @@ const Summary = () => {
         </tr>
       </table>
       <div className="btn">
-        <a href="/">
-          <button className="btnback">Back</button>
-        </a>
+        {/* <button className="btnback">Back</button> */}
+        <Link to="/">
+          <button className="btnback">BACK</button>
+        </Link>
       </div>
     </div>
   );

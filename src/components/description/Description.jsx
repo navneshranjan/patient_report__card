@@ -1,5 +1,6 @@
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import "./description.css";
+import { Link } from "react-router-dom";
 
 import UserContext from "../../Store";
 
@@ -276,9 +277,15 @@ const Description = () => {
       </div>
       <hr />
       <div className="btn">
-        <button className="btn1">BACK</button>
+        {/* <button className="btn1">BACK</button> */}
 
-        <button className="btn2">NEXT</button>
+        <Link to="/">
+          <button className="btn1">BACK</button>
+        </Link>
+
+        <Link to="/summary">
+          <button className="btn2">NEXT</button>
+        </Link>
       </div>
     </>
   );
